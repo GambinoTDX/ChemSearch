@@ -1,4 +1,4 @@
-# RidgeHacks-2026-Chemistry-Project-w-Ayaan-Manuel-and-Veer
+# RidgeHacks-2026-ChemSearch
 
 ChemSearch is an all-in-one interactive chemistry platform that simplifies chemical analysis by combining element data lookup, dynamic solubility graphing, and an automated, step-by-step Lewis structure generator into one intuitive, modern interface.
 
