@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RidgeHacks - Solubility Curves</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <h1>ChemSearch</h1>
+            <ul>
+                <li><a href="#about">Home</a></li>
+                <li><a href="#graphing">Graphing Solubility Curves</a></li>
+                <li><a href="#lookup">Element / Formula Lookup</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <h2>About</h2>
+            <p>This website allows you to quickly look up chemical formulas to get useful information, and graph solubility curves for chemical formulas based on element data.</p>
+            
+            <div class="feature-boxes">
+                <div class="feature-box">
+                    <h3><a href="#lookup">Element / Formula Lookup</a></h3>
+                    <p>Enter an element symbol, element name, or chemical formula to view all available data including atomic properties and solubility information.</p>
+                </div>
+                
+                <div class="feature-box">
+                    <h3><a href="#graphing">Graphing Solubility Curves</a></h3>
+                    <p>Graph solubility curves for chemical formulas based on element data. Enter multiple formulas and compare their solubility patterns across different temperatures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="graphing">
+        <div class="container">
+            <h2>Graphing Solubility Curves</h2>
+            <p>Enter a chemical formula (e.g., NaCl, KCl) to graph its solubility curve.</p>
+            <input type="text" id="formulaInput" placeholder="Enter formula">
+            <button id="addBtn">Add</button>
+            <div id="result"></div>
+            <canvas id="chart"></canvas>
+            <button id="resetBtn">Reset</button>
+        </div>
+    </section>
+
+    <section id="lookup">
+        <div class="container">
+            <h2>Element / Formula Lookup</h2>
+            <p>Enter an element symbol, name, or formula to view all available data.</p>
+            <input type="text" id="lookupInput" placeholder="Enter element or formula">
+            <button id="lookupBtn">Lookup</button>
+            <div id="lookupOutput"></div>
+            <canvas id="lookupChart"></canvas>
+        </div>
+    </section>
+
+    <script src="element.js"></script>
+    <script src="formula.js"></script>
+    <script src="lewis.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
